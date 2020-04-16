@@ -1,13 +1,13 @@
 package cms
 
 import (
-	"github.com/gogf/gf/frame/g"
-	"github.com/gogf/gf/net/ghttp"
+	"gf-mall/app/api/cms/subject"
+	"gf-mall/app/middleware/auth"
+	"gf-mall/app/middleware/router"
 )
 
 func init() {
-	s := g.Server()
-	s.Group("/subject", func(group *ghttp.RouterGroup) {
-		group.GET("/listAll", subject.listAll)
-	})
+	g := router.New("admin", "/subject", auth.Auth)
+	g.GET("/listAll", "cms:subject:view", subject.ListAll)
+
 }

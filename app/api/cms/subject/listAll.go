@@ -1,8 +1,12 @@
 package subject
 
-import "github.com/gogf/gf/net/ghttp"
+import (
+	"gf-mall/app/utils/response"
 
-// 获取全部商品专题
-func listAll(r *ghttp.Request) {
-	r.Response.Writeln("Hello World!")
+	"github.com/gogf/gf/net/ghttp"
+)
+
+//ListAll 获取全部商品专题
+func ListAll(r *ghttp.Request) {
+	response.Fail(r, "Not support this yet!")
 }
