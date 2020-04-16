@@ -1,10 +1,11 @@
 package router
 
 import (
+	"gf-mall/app/api/hello"
+	_ "gf-mall/app/cms"
+
 	"github.com/gogf/gf/frame/g"
 	"github.com/gogf/gf/net/ghttp"
-	"github.com/sanrentai/gf-mall/app/api/hello"
-	_ "github.com/sanrentai/gf-mall/app/cms"
 )
 
 func init() {

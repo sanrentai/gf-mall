@@ -1,4 +1,4 @@
-module github.com/sanrentai/gf-mall
+module gf-mall
 
 require (
 	github.com/alecthomas/template v0.0.0-20190718012654-fb15b899a751
@@ -8,6 +8,7 @@ require (
 	github.com/gogf/gf v1.12.1
 	github.com/gogf/gf-swagger v1.0.3 // indirect
 	github.com/mailru/easyjson v0.7.1 // indirect
+	github.com/sanrentai/gf-mall v0.0.0-20200416055516-ffd738d0c9d2
 	github.com/swaggo/swag v1.6.5
 	github.com/urfave/cli v1.22.4 // indirect
 	golang.org/x/net v0.0.0-20200324143707-d3edc9973b7e // indirect

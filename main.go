@@ -1,8 +1,9 @@
 package main
 
 import (
-	_ "github.com/sanrentai/gf-mall/boot"
-	_ "github.com/sanrentai/gf-mall/router"
+	_ "gf-mall/boot"
+	_ "gf-mall/router"
+
 	"github.com/gogf/gf/frame/g"
 )
 
