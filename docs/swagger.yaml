@@ -1,0 +1,15 @@
+info:
+  contact: {}
+  license: {}
+paths:
+  /api/users:
+    get:
+      produces:
+      - application/json
+      responses:
+        "200":
+          description: ok
+          schema:
+            type: string
+      summary: 获取所有用户
+swagger: "2.0"
