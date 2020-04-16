@@ -8,7 +8,7 @@ import (
 
 //Auth 鉴权中间件，只有登录成功之后才能通过
 func Auth(r *ghttp.Request) {
-	login := false
+	login := true
 	if login {
 		r.Middleware.Next()
 	} else {

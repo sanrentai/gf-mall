@@ -26,12 +26,12 @@ type Resp struct {
 
 //Success 成功
 func Success(r *ghttp.Request, data ...interface{}) {
-	JSONExit(r, SUCCESS, "OK", data)
+	JSONExit(r, SUCCESS, "OK", data...)
 }
 
 //Fail 失败
 func Fail(r *ghttp.Request, msg string, data ...interface{}) {
-	JSONExit(r, OtherError, msg, data)
+	JSONExit(r, OtherError, msg, data...)
 }
 
 //JSON  标准返回结果数据结构封装。
@@ -41,7 +41,7 @@ func JSON(r *ghttp.Request, code ErrorCode, msg string, data ...interface{}) {
 		respData = data[0]
 	}
 	r.Response.WriteJson(Resp{
-		Code: code,
+		Code: string(code),
 		Msg:  msg,
 		Data: respData,
 	})

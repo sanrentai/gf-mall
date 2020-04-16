@@ -9,5 +9,5 @@ import (
 func init() {
 	g := router.New("admin", "/subject", auth.Auth)
 	g.GET("/listAll", "cms:subject:view", subject.ListAll)
-
+	g.GET("/list", "cms:subject:view", subject.List)
 }
